@@ -15,6 +15,7 @@
     <script src="../resources/html5resp/respond.js"></script>
     <![endif]-->
     <link href="../css/login.css">
+    <script src="../js/jquery.cookie-1.4.1.js"></script>
     <script src="../js/sha1.js"></script>
     <script src="../js/login.js"></script>
 
@@ -104,7 +105,7 @@
                 -->
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox"> 记住密码
+                        <input type="checkbox" id="isCheck"> 记住密码
                     </label>
                 </div>
                 <!--
@@ -112,7 +113,7 @@
                 -->
                 <div class="btn-group btn-group-justified" role="group" aria-label="...">
                     <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-primary">登录</button>
+                        <button type="button" class="btn btn-primary" onclick="login();">登录</button>
                     </div>
                 </div>
             </form>
