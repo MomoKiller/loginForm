@@ -14,15 +14,20 @@
     <script src="../resources/html5resp/html5shiv.js"></script>
     <script src="../resources/html5resp/respond.js"></script>
     <![endif]-->
+    <link href="../css/homePage.css" />
+    <style>
+        table.tableNorth tr td{
+            vertical-align: middle;
+        }
+    </style>
 </head>
 <body>
 <div class="container-fluid">
-
-    <div class="row" style="border:1px solid #3a87ad;">
+    <div class="row">
         <!--  服务团队  -->
         <div class="col-md-6">
             <div class="panel panel-default">
-                <table class="table text-center tableNorthPanel">
+                <table class="table text-center tableNorth">
                     <tr>
                         <td rowspan="3" class="col-md-3 bg-info">服务团队</td>
                         <td class="col-md-3">客户经理</td>
@@ -44,7 +49,7 @@
         <!--  专线统计  -->
         <div class="col-md-2">
             <div class="panel panel-default">
-                <table class="table text-center  tableNorthPanel">
+                <table class="table text-center tableNorth">
                     <tr>
                         <td class="col-md-6 success">AAA专线</td>
                         <td class="col-md-6"></td>
@@ -67,7 +72,7 @@
         <!--  拓扑  -->
         <div class="col-md-4">
             <div class="panel panel-default">
-                <table class="table text-center tableNorthPanel">
+                <table class="table text-center tableNorth">
                     <tr>
                         <td class="col-md-2 danger">拓扑</td>
                         <td class="col-md-10" style="background: url('../img/tuopu5.png');background-size: 100% 100%;"></td>
@@ -76,10 +81,10 @@
             </div>
         </div>
     </div>
-
-    <div class="row"  style="border:1px solid #3a87ad;">
+    <!--  中间栅格  -->
+    <div class="row" >
         <div class="col-md-6">
-            <div class="panel panel-primary">
+            <div class="panel panel-primary panelCenter">
                 <div class="panel-heading">业务与告警概况</div>
                 <div class="panel-body">
                     Panel content
@@ -87,7 +92,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <div class="panel panel-primary">
+            <div class="panel panel-primary panelCenter">
                 <div class="panel-heading">工单概况</div>
                 <div class="panel-body">
                     <div class="row">
@@ -144,9 +149,10 @@
             </div>
         </div>
     </div>
-    <div class="row" style="border: 1px solid #3a87ad;">
+    <!--  下方栅格  -->
+    <div class="row">
         <div class="col-md-4">
-            <div class="panel panel-primary">
+            <div class="panel panel-primary panelSouth">
                 <div class="panel-heading">业务与告警概况</div>
                 <div class="panel-body">
                     Panel content
@@ -154,7 +160,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="panel panel-primary">
+            <div class="panel panel-primary panelSouth">
                 <div class="panel-heading">业务与告警概况</div>
                 <div class="panel-body">
                     Panel content
@@ -162,7 +168,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="panel panel-primary">
+            <div class="panel panel-primary panelSouth">
                 <div class="panel-heading">业务与告警概况</div>
                 <div class="panel-body">
                     Panel content
@@ -170,12 +176,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
 </div>
 </body>
 <script src="../js/homePage.js"></script>
